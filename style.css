@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+nav {
+    width: 100%;
+    background-color: #F7F9F9;
+    margin-bottom: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav ul {
+    display: flex;
+    background-color: #113f67;
+    color: #eff2f8;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding: 30px;
+}
+
+ul li {
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.newBookBtn {
+    position: fixed;
+    bottom: 30px;
+    background-color: #113f67;
+    color: #eff2f8;
+    right: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.main .newTodoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+} 
+
+.main .newTodoForm > div {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main .newTodoForm input {
+    cursor: pointer;
+    width: 100%;
+}
+
+.inactive {
+    display: none !important;
+}
+
+.selected {
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+
+.todo {
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    word-wrap: break-word;
+}
+
+.todo div {
+    align-self: end;
+}
+
+.todo input {
+    width: 50px;
+}
+
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.editTodo {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end; 
+}
+
+.projectContainer {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.projectContainer div:nth-child(1) {
+    font-weight: bold;
+}
+
+.projectContainer .projectTodos {
+    margin-left: 20px;
+}

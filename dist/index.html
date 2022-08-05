@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="navHome">Home</li>
+            <li class="navToday">Today</li>
+            <li class="navWeek">This week</li>
+            <li class="navProjects">Projects</li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="newTodoForm">
+            <div>
+                <label for="text">Title(*): </label>
+                <input type="text" name="title" id="title" placeholder="Title" required>
+            </div>
+            <div>
+                <label for="text">Description: </label>
+                <input type="text" name="description" id="description" placeholder="Description">
+            </div>
+            <div>
+                <label for="text">Due Date: </label>
+                <input type="date" name="duedate" id="duedate" placeholder="Duedate">
+            </div>
+            <div>
+                <label for="text">Priority: </label>
+                <select name="priority" id="priority">
+                    <option value="low">Low</option>
+                    <option selected value="mid">Mid</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div>
+                <label for="text">Project: </label>
+                <input type="text" name="project" id="project" placeholder="Project">
+            </div>
+            <div>
+                <input type="submit" value="Add" class="addBookBtn">
+                <input type="button" value="Cancel" class="closeTodoForm">
+            </div>
+        </div>
+        <div class="todos-container">
+            <!-- <div class="todo">
+                <p>Title 1</p>
+                <p>Due: 20.20.2022</p>
+                <input type="button" value="Edit">
+                <input type="button" value="Delete">
+            </div> -->
+        </div>
+        <div class="editTodoContainer"></div>
+        <div id="content">
+            <!-- <div class="projectContainer">
+                <div> Project 1</div>
+                <div class="projectTodos">
+                    <div>Todo 1</div>
+                    <div>Todo 2</div>
+                    <div>Todo 3</div>
+                </div>
+            </div> -->
+        </div>
+        
+        
+    </div>
+
+    <input type="button" value="New Todo" class="newBookBtn">
+
+    <script src="main.js"></script>
+</body>
+</html>
